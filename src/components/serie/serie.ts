@@ -1,5 +1,5 @@
-import { ProtoSerieStructure } from "../../models/serie";
-import { Component } from "../component/component";
+import { ProtoSerieStructure } from '../../models/serie';
+import { Component } from '../component/component';
 
 export class Serie extends Component {
   constructor(
@@ -24,7 +24,7 @@ export class Serie extends Component {
     document
       .querySelector(`#s${this.serie.id}`)
       ?.addEventListener('change', () => {
-        this.serie.watched = true
+        this.serie.watched = true;
         this.updateSerie(this.serie);
       });
   }
@@ -54,7 +54,7 @@ export class Serie extends Component {
                   <i class="icon--score fas fa-star" title="5/5"></i>
                 </li>
               </ul>
-              <i id="d${this.serie.score}" class="fas fa-times-circle icon--delete"></i>
+              <i  id="d${this.serie.score}" class="fas fa-times-circle icon--delete" Title="6"></i>
             </li>`;
   }
 }
