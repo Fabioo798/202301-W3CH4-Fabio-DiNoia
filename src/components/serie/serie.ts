@@ -27,6 +27,7 @@ export class Serie extends Component {
         this.serie.watched = true;
         this.updateSerie(this.serie);
       });
+      return;
   }
 
   createTemplate() {
