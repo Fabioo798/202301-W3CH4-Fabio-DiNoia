@@ -1,4 +1,4 @@
-const SERIES = [
+export const SERIES = [
   {
     id: 1,
     name: 'The Sopranos',
